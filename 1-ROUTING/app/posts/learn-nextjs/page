@@ -1,0 +1,21 @@
+import React from 'react'
+
+const page = () => {
+  return (
+    <section className="py-24 ">
+
+        <div className='container flex justify-center '>
+            {/* post frontmetter */}
+            <header className='rounded bg-gray-400 p-8 w-96'>
+                <h1 className='text-3xl text-gray-800'>
+                    Super
+                </h1>
+                    <p className='text-sm font-mono uppercase bold text-gray-50'>Next Js</p>
+            </header>
+        </div>
+    
+    </section>
+  )
+}
+
+export default page
