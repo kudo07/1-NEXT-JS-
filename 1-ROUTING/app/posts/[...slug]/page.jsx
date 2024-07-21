@@ -9,12 +9,12 @@ export async function generateStaticParams(){
 // 
 // this function calls automatically as it define in the next js
 const page = async ({params}) => {
-    console.log(params);
+    // console.log(params);
     
 
     const {slug}=params
     // this params comes after the page.jsx of the posts where the params defined from taking the markown filename name
-   console.log(slug)
+//    console.log(slug)
 
     const {content,frontmatter}=await getPostBySlug(slug[0])
     //                                                  8

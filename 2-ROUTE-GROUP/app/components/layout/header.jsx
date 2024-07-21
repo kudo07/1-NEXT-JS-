@@ -16,6 +16,10 @@ const Header = () => {
               <li>
                 <NavLink href="/posts">Posts</NavLink>
               </li>
+              <li>
+                <NavLink href="/address">Address</NavLink>
+              </li>
+              
               {/* <li>
                 <NavLink href="/contact">contact</NavLink>
               </li> */}

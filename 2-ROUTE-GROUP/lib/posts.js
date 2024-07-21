@@ -51,6 +51,8 @@ export async function getPostBySlug(slug){
             }
         }
     })
+    await wait(2000)
+
     // console.log(realSlug,"realslug end")
     return {content,frontmatter,slug:realSlug}
 }
@@ -69,7 +71,12 @@ export async function getAllPosts(){
         posts.push(post)
     }
     // console.log(posts)
+    await wait(2000)
     return posts
+}
+// 
+export async function wait(ms){
+    return new Promise(resolve=>setTimeout(resolve,ms))
 }
 // [
 //   {

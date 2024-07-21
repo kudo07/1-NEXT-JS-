@@ -12,11 +12,11 @@ const NavLink = ({href,...rest}) => {
     
     // const isActive=href.startsWith(pathname)
     const isActive=href===pathname
-    console.log(href,pathname,"efrefgrfre ");
+    // console.log(href,pathname,"efrefgrfre ");
     
 
     // more specific as the root path name  is /
-    console.log(isActive)
+    // console.log(isActive)
     // give us the path
     // const router=useRouter()
     // router.pathname
