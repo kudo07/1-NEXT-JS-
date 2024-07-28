@@ -10,7 +10,7 @@ export function getData(){
         reject("Failed to get data")
       }
       resolve()
-    },3000)
+    },2000)
 })}
 
 const page = async () => {

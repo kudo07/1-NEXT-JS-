@@ -1,4 +1,7 @@
+import PageView from "@/app/components/PageView";
 import { getAllPosts, getPostBySlug } from "@/lib/posts"
+import { Suspense } from "react";
+
 export async function generateStaticParams(){
     const posts=await getAllPosts()
     return posts.map(post=>({slug:[post.slug]}))
@@ -31,7 +34,13 @@ const page = async ({params}) => {
                 <h1 className='text-3xl text-gray-800'>
                     Super {frontmatter.title}
                 </h1>
-                    <p className='text-sm font-mono uppercase bold text-gray-50'>Next Js</p>
+                    <p className='text-sm font-mono uppercase bold text-gray-50'>Next Js {frontmatter.author}</p>
+                    {/* <PageView/>
+                     */}
+                     {/* using the suspense */}
+                     <Suspense fallback={<div>COUNT.......</div>}>
+                        <PageView slug={slug}/>
+                     </Suspense>
             </header>
             {/* main content */}
             <main className="prose mt-12">{content}</main>

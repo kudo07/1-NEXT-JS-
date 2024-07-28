@@ -8,9 +8,9 @@ const page = () => {
             {/* post frontmetter */}
             <header className='rounded bg-gray-400 p-8 w-96'>
                 <h1 className='text-3xl text-gray-800'>
-                    Supeir
+                    Super
                 </h1>
-                    <p className='text-sm font-mono uppercase bold text-gray-50'>Next Js</p>
+                    <p className='text-sm font-mono uppercase bold text-gray-50'>React Js</p>
             </header>
         </div>
     
