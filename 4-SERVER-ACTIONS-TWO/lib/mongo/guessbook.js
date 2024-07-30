@@ -1,5 +1,7 @@
 // import clientPromise from '@/lib/mongo/client'
 
+import { cache } from "react";
+// react actions
 import clientPromise from "./client"
 
 // let client
@@ -26,7 +28,7 @@ async function init() {
 })()
 
 
-export const getGuessBookEntries=async()=>{
+export const getGuessBookEntries=cache(async()=>{
     try {
         if(!guessbook) await init()
         console.log("fetching entries")
@@ -38,7 +40,7 @@ export const getGuessBookEntries=async()=>{
     } catch (error) {
     return { error: 'Failed to fetch guessbook!' }
     }
-}
+})
 // endpoit 
 export const createGuessBookEntry=async({name,message})=>{
   try {

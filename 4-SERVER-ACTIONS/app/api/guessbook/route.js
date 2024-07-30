@@ -13,7 +13,7 @@ export async function GET(){
 }
 
 // post
-
+// in server action this post not worked
 export async function POST(request){
     try {
         // this is how we get the  data out of  the body out of the request handlers by awaiting the json method
